@@ -1,15 +1,21 @@
 .object{
   text-align: center;
+  background-image: image("public/images/background.jpg");
 }
 
 .jumbotron{
-  background-color: orange
+
+  background-color: lightgreen !important;
+}
+
+body{
+    background-color: lightblue !important;
 }
 
 #siteTitle{
   text-align: center;
 }
 
-body {
-  background-image: url("public/images/background.jpg");
+#homeLink{
+  width: 50px;
 }

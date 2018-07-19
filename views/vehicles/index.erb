@@ -1,13 +1,18 @@
-<h2 id="siteTitle">Hi visitor, these are some cars</h2><br><br><br><br>
-<% @vehicle.each do |vehicle| %>
-  <div class="object col-md-3">
-    <h1><%= vehicle.name %></h1>
-    <% if vehicle.description.length > 20 %>
-      <a href="<%= vehicle.id %>">See vehicle description</a><br>
-    <% else%>
-      <p> <h4><%= vehicle.description %></h4></p>
-      <a href="<%= vehicle.id %>">Show</a>
-    <%end%>
-    <a href="<%= vehicle.id %>/edit">Edit</a><br>
-  </div>
-<% end %>
+<h2 id="siteTitle">Hi visitor, these are some vehicles</h2><br><br><br><br>
+<div class="col-md-1">
+
+</div>
+<div class="col-md-10 jumbotron">
+  <% @vehicle.each do |vehicle| %>
+    <div class="object col-md-3 object">
+      <h2><%= vehicle.name %></h2>
+      <% if vehicle.description.length > 20 %>
+        <a href="<%= vehicle.id %>">See vehicle description</a><br>
+      <% else%>
+        <p> <h4><%= vehicle.description %></h4></p>
+        <a href="<%= vehicle.id %>">Show</a>
+      <%end%>
+      <a href="<%= vehicle.id %>/edit">Edit</a><br>
+    </div>
+  <% end %>
+</div>

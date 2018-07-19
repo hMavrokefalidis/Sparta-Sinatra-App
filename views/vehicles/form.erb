@@ -1,12 +1,10 @@
 <form class="" action="/<%= @vehicle.id %>" method="POST">
   <div class="">
-    <label>Title</label>
-    <input type="text" name="name" placeholder="Enter a title" value="<%= @vehicle.name %>">
+    <input type="text" name="name" placeholder="Enter your vehicle" value="<%= @vehicle.name %>"> <br><br>
   </div>
 
   <div class="">
-    <label>Body</label>
-    <textarea name="description" placeholder="Enter the body of the vehicle"><%= @vehicle.description %></textarea>
+    <textarea name="description" placeholder="Enter a short description of the vehicle"><%= @vehicle.description %></textarea> <br>
   </div>
 
   <div class="">
