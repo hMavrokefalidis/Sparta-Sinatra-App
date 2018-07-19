@@ -1,0 +1,15 @@
+.object{
+  text-align: center;
+}
+
+.jumbotron{
+  background-color: orange
+}
+
+#siteTitle{
+  text-align: center;
+}
+
+body {
+  background-image: url("public/images/background.jpg");
+}
