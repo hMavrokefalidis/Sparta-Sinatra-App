@@ -1,0 +1,10 @@
+<h1>Welcome to the homepage</h1>
+<% @vehicle.each do |vehicle| %>
+  <div class="">
+    <h1><%= vehicle.name %></h1>
+    <a href="<%= vehicle.id %>/edit">Edit</a>
+    <a href="<%= vehicle.id %>">Show</a>
+    <p><%= vehicle.description %></p>
+    <%= vehicle.id %>
+  </div>
+<% end %>

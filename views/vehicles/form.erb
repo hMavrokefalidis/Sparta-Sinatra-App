@@ -1,0 +1,19 @@
+<form class="" action="/<%= @vehicle.id %>" method="POST">
+  <div class="">
+    <label>Title</label>
+    <input type="text" name="name" placeholder="Enter a title" value="<%= @vehicle.name %>">
+  </div>
+
+  <div class="">
+    <label>Body</label>
+    <textarea name="description" placeholder="Enter the body of the vehicle"><%= @vehicle.description %></textarea>
+  </div>
+
+  <div class="">
+    <input type="submit" name="" value="Save Vehicle">
+  </div>
+
+  <% if(@vehicle.id != "") %>
+    <input type="hidden" name="_method" value="PUT">
+  <% end %>
+</form>
